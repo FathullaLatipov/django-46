@@ -16,7 +16,7 @@ class ProductModel(models.Model):
     product_name = models.CharField(max_length=30)
     product_price = models.FloatField()
     product_des = models.TextField()
-    product_image = models.ImageField(upload_to='media')
+    product_image = models.ImageField(upload_to='products')
     product_amount = models.IntegerField()
     product_category = models.ForeignKey(Category, on_delete=models.CASCADE,)
     created_at = models.DateTimeField(auto_now_add=True)
