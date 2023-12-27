@@ -249,8 +249,8 @@
                         <div class="sidebar__item">
                             <h4>Department</h4>
                             <ul>
-                                {% for category in categories %}
-                                     <li><a href="category/{{ category.pk }}">{{ category.category_name }}</a></li>
+                                {% for category in new_cat %}
+                                     <li><a href="{{ category.pk }}">{{ category.category_name }}</a></li>
                                 {% endfor %}
                             </ul>
                         </div>
